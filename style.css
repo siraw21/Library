@@ -1,0 +1,152 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: 100vh;
+  background: #f0f2f5;
+  margin: 0;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 1rem;
+}
+
+.new-book {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+}
+
+.new-book button {
+  width: 50%;
+  padding: 12px;
+  margin-bottom:1rem ;
+  background-color: #1d4ed8;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.new-book button:hover {
+  background-color: #2563eb;
+  transform: scale(1.02);
+}
+
+.book-form {
+  display: none;
+  background: #fff;
+  padding: 20px 50px 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.book-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.book-form input[type="text"],
+.book-form input[type="number"] {
+  width: 90%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.book-form input[type="text"]:focus,
+.book-form input[type="number"]:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 5px #1d4ed8;
+  outline: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+#submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1d4ed8;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.book-form button:hover {
+  background-color: #2563eb;
+  transform: scale(1.02);
+}
+
+.main-display {
+  display: flex;
+  /* grid-template-columns: 50% 50%; */
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 0.5rem;
+  border: 1px solid #333;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  width: 180px;
+  height: 180px;
+  background-color:#f0f2f5 ;
+  padding: 0.5rem;
+  border: 1px solid #bab9b9;
+  border-radius: 0.6rem;
+  box-shadow:  0 0 5px #1d4ed8;
+}
+
+.card p {
+  margin: 0;
+  padding: 0.2rem;
+}
+
+.removeBtn {
+  width: 50%;
+  padding: 6px;
+  background-color: #1d4ed8;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.removeBtn:hover {
+  background-color: #2563eb;
+  transform: scale(1.02);
+}
